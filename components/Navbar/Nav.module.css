@@ -1,0 +1,91 @@
+.navbar {
+  height: var(--nav-size);
+  padding: 0 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo */
+.logo {
+  color: var(--primary);
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.logo strong {
+  color: var(--text-color);
+  animation-name: logoreverse;
+  animation-duration: 400ms;
+}
+
+.logo strong:hover {
+  animation-name: logo;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+}
+
+.navbarNav {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navItem {
+  width: calc(1rem + 3.5vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  /* --icon-size: calc(var(--nav-size) * 0.4); */
+  --icon-size: calc(1rem + 1.7vw);
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 500ms;
+}
+
+.icon:hover {
+  /* filter: brightness(1.2); */
+  transform: rotate(20deg);
+
+}
+
+.icon svg {
+  fill: var(--text-color);
+  width: 38px;
+  height: 38px;
+}
+
+.icon svg path {
+  fill: var(--primary);
+}
+
+/*  LOGO  */
+@keyframes logo {
+  from {
+    padding: 0;
+  }
+
+  to {
+    padding: 0 2px 0 3px;
+  }
+}
+
+@keyframes logoreverse {
+  from {
+    padding: 0 2px 0 3px;
+  }
+
+  to {
+    padding: 0;
+  }
+}

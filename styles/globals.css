@@ -1,16 +1,52 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Quicksand:wght@500;600;700&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+  --background: #111113;
+  --text-color: #e1e1e6;
+
+  --nav-size: 100px;
+  --padding: 0 5%;
+  --signUpPadding: 20px 8px;
+
+  --primary: #f15bb5;
+  --subPrimary2: #FE46A5;
+  --subPrimary: #ED0DD9;
+  --subsubPrimary: #f50a81;
+  /*
+  --tertiary: #00bbf9;
+  --subTertiary: #00f5d4; */
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
+*::selection {
+  background: var(--primary);
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+  font: 400 16px Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 
+body::-webkit-scrollbar {
+  width: .4em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(27, 27, 27, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  outline: 1px solid rgb(255, 255, 255);
+} */
