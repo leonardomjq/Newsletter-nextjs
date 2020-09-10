@@ -11,7 +11,7 @@
   color: var(--primary);
   text-decoration: none;
   font-family: Inter;
-  font-size: 30px;
+  font-size: calc(1rem + 1vw);
   font-weight: 800;
 }
 
