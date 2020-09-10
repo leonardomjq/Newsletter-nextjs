@@ -17,6 +17,7 @@ export default function Hero() {
         <input type="text" placeholder="Your email address" />
         <button>Subscribe</button>
       </div>
+      {/* <Blob1 className={styles.blob} /> */}
     </div>
   );
 }

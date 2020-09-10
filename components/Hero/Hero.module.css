@@ -73,6 +73,7 @@
 
 .wrapSignUp input {
   border: none;
+  box-sizing: border-box;
   padding: var(--signUpPadding);
   font-size: calc(1rem + 0.2vw);
   outline: none;
@@ -81,6 +82,7 @@
 
 .wrapSignUp input::placeholder {
   padding-left: 5px;
+  font-style: normal;
 }
 
 .wrapSignUp button {
@@ -97,6 +99,7 @@
   color: var(--text-color);
   background-color: var(--primary);
 }
+
 
 @media (max-width: 768px) {
   .wrapSignUp input {
