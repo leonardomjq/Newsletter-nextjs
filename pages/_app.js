@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import '../styles/globals.scss';
 // import { StaticKitProvider } from '@statickit/react';
 
 function MyApp({ Component, pageProps }) {

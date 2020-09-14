@@ -1,0 +1,112 @@
+.wrapper {
+  height: 90vh;
+  padding: var(--master-padding);
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+
+  h1 {
+    font-size: calc(1rem + 6.5vw);
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+  }
+
+  p {
+    margin-top: 25px;
+    word-wrap: break-word;
+    padding: 0 30px 0 30px;
+    font-size: calc(1rem + 1.7vw);
+    font-weight: 500;
+    line-height: calc(1vw + 1rem + 1.5vw);
+    text-align: center;
+
+    strong {
+      background-image: linear-gradient(to left, var(--color-gamma), var(--color-alpha));
+      background-position: 0px 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 5px;
+      animation-name: underlineReverse;
+      animation-duration: 2s;
+
+      &:hover {
+        animation-name: underline;
+        animation-duration: 400ms;
+        animation-fill-mode: forwards;
+
+        @keyframes underline {
+          from {
+            background-size: 100% 5px;
+          }
+
+          to {
+            background-size: 75% 5px;
+          }
+        }
+
+        @keyframes underlineReverse {
+          from {
+            background-size: 75% 5px;
+          }
+
+          to {
+            background-size: 100% 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrapSignUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    border: none;
+    box-sizing: border-box;
+    padding: var(--signup-padding);
+    font-size: calc(1rem + 0.2vw);
+    outline: none;
+    width: 30%;
+
+    &::placeholder {
+      padding-left: 5px;
+      font-style: normal;
+    }
+  }
+
+  button {
+    display: table;
+    outline: none;
+    cursor: pointer;
+    font-size: calc(1rem + 0.2vw);
+    text-align: center;
+    align-items: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: none;
+    padding: var(--signup-padding);
+    width: 15%;
+    height: 100%;
+    color: var(--text-color);
+    background-color: var(--color-alpha);
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapSignUp input {
+    width: 60%;
+  }
+
+  .wrapSignUp button {
+    width: auto;
+  }
+}

@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Quicksand:wght@500;600;700&display=swap');
 
 :root {
-  --background: #111113;
+  --background: #0c0c0e;
   --text-color: #e1e1e6;
 
-  --nav-size: 100px;
-  --padding: 0 5%;
-  --signUpPadding: 20px 8px;
+  --color-alpha: #f15bb5;
+  --color-beta: #FE46A5;
+  --color-gamma: #ED0DD9;
+  --color-omega: #f50a81;
 
-  --primary: #f15bb5;
-  --subPrimary2: #FE46A5;
-  --subPrimary: #ED0DD9;
-  --subsubPrimary: #f50a81;
-  /*
-  --tertiary: #00bbf9;
-  --subTertiary: #00f5d4; */
+  --nav-size: 100px;
+  --master-padding: 0 5%;
+  --signup-padding: 20px 8px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  &::selection {
+    background: var(--color-gamma);
+  }
 }
 
-*::selection {
-  background: var(--primary);
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,7 +37,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 
+
 body::-webkit-scrollbar {
   width: .4em;
 }
@@ -47,6 +47,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
-  outline: 1px solid rgb(255, 255, 255);
-} */
+  background-color: var(--color-alpha);
+  outline: 1px solid var(--color-beta);
+}

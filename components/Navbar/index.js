@@ -1,16 +1,19 @@
 import React from 'react';
-import styles from './Nav.module.css';
+import styles from './Nav.module.scss';
+import Nugget from '../../public/nuggets.svg';
 
 export function Navbar(props) {
   return (
-    <nav className={styles.navbar}>
-      <a href="/" className={styles.logo}>
-        {'<'}
-        <strong>DevGoldNuggets</strong>
-        {' />'}
-      </a>
-      <ul className={styles.navbarNav}>{props.children}</ul>
-    </nav>
+    <div>
+      <nav className={styles.navbar}>
+        <a href="/" className={styles.logo}>
+          {'<'}
+          <strong>DevGoldNuggets</strong>
+          {' />'}
+        </a>
+        <ul className={styles.wrapNavItem}>{props.children}</ul>
+      </nav>
+    </div>
   );
 }
 
