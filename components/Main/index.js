@@ -1,4 +1,5 @@
 import React from 'react';
+import InfoBox from '../InfoBox';
 import styles from './Main.module.scss';
 
 export default function Main() {
@@ -10,35 +11,11 @@ export default function Main() {
             <h2>
               <strong>Why</strong> another newsletter?
             </h2>
+            <h2>Well, its free. 🤩</h2>
           </div>
-          <img src="/spaceship.png" className={styles.image} />
+          <img src="/spaceship.png" />
         </div>
-      </section>
-
-      <section>
-        <div className={styles.outerBox}>
-          <div className={styles.box}>
-            <h1>+1000 Reactions 🥳</h1>
-          </div>
-          <div className={styles.card}>
-            <img src="/pinned.png" />
-            <img src="/pinned.png" />
-            <img src="/pinned.png" />
-            <img src="/pinned.png" />
-          </div>
-          <h2>Started as a hobby, turned into an addiction.</h2>
-        </div>
-      </section>
-
-      <section>
-        <div className={styles.grid}>
-          <img src="/astronaut.png" className={styles.image} />
-          <div className={styles.text}>
-            <h2>
-              <strong>Why</strong> another newsletter?
-            </h2>
-          </div>
-        </div>
+        <InfoBox>+1000 Reactions on Dev.to, so it's worth your email</InfoBox>
       </section>
     </div>
   );

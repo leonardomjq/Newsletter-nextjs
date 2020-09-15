@@ -1,8 +1,9 @@
 .grid {
-  height: 80vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: var(--master-padding);
+  padding: var(--master-margin);
+  align-items: center;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -10,32 +11,30 @@
 
   .text {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 
     h2 {
-      font-size: calc(1rem + 6vw);
-      padding-left: 30px;
+      font-size: calc(1rem + 5vw);
+
+      &:nth-child(2) {
+        padding-top: 1em;
+        font-size: calc(1rem + 4vw);
+      }
 
       strong {
         background-color: var(--color-alpha);
         padding: 0 10px;
-
-        &:hover {
-          background-color: var(--color-beta);
-          transition: 400ms ease-in-out;
-        }
-
-        &:not(:hover) {
-          transition: 400ms ease-in;
-        }
       }
     }
   }
 
-  .image {
-    height: 100%;
-    width: 100%;
+  img {
+    max-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
 
     &:hover {
       animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
@@ -69,41 +68,17 @@
   }
 }
 
-.outerBox {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: calc(1rem + 2vw);
 
-  .box {
-    width: 65%;
-    border: 5px solid var(--text-color);
-    padding: 3% 5%;
 
-    h1 {
-      text-align: center;
-      font-size: calc(1rem + 4.5vw);
-      font-weight: 900;
-      text-shadow: var(--color-omega) 7px 7px 0px;
-    }
-  }
 
-  .card {
-    height: auto;
-    width: 100%;
-    display: flex;
-    overflow-y: auto;
+// .card {
+//   height: auto;
+//   width: 100%;
+//   display: flex;
+//   overflow-y: auto;
 
-    img {
-      width: 40%;
-      margin: calc(1rem + 1vw);
-    }
-  }
-
-  h2 {
-    margin: calc(1rem + 4vw) 0;
-    font-size: calc(1rem + 1.5vw);
-  }
-}
+//   img {
+//     width: 40%;
+//     margin: 1rem;
+//   }
+// }
