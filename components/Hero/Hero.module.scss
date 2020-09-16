@@ -35,11 +35,9 @@
     text-align: center;
 
     strong {
-      background-image: linear-gradient(
-        to left,
-        var(--color-gamma),
-        var(--color-alpha)
-      );
+      background-image: linear-gradient(to left,
+          var(--color-gamma),
+          var(--color-alpha));
       background-position: 0px 100%;
       background-repeat: no-repeat;
       background-size: 100% 5px;
@@ -79,6 +77,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 1rem;
 
   input {
     border: none;
