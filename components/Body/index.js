@@ -7,6 +7,23 @@ export default function Body() {
   return (
     <div>
       <InfoBox>+1000 Reactions</InfoBox>
+      <section>
+        <div className={styles.grid}>
+          <div className={styles.text}>
+            <h2>
+              Featured <strong>#2</strong> on{' '}
+              <a
+                href="https://dev.to/leomjaques/my-fav-resources-being-a-freelancer-as-a-side-hustle-15ml"
+                target="_blank"
+              >
+                Dev.to
+              </a>{' '}
+              August.
+            </h2>
+          </div>
+          <img src="/spaceship.png" />
+        </div>
+      </section>
       <section className={styles.cardList}>
         <Card
           date="Aug 6"
@@ -68,23 +85,6 @@ export default function Body() {
           name="Orin Fletcher"
           img="./user10.jpeg"
         />
-      </section>
-      <section>
-        <div className={styles.grid}>
-          <div className={styles.text}>
-            <h2>
-              Featured <strong>#2</strong> on{' '}
-              <a
-                href="https://dev.to/leomjaques/my-fav-resources-being-a-freelancer-as-a-side-hustle-15ml"
-                target="_blank"
-              >
-                Dev.to
-              </a>{' '}
-              August.
-            </h2>
-          </div>
-          <img src="/spaceship.png" />
-        </div>
       </section>
     </div>
   );
