@@ -1,0 +1,88 @@
+.card {
+  height: 350px;
+  width: 350px;
+  min-width: 300px;
+  padding: 1.5rem;
+  background: var(--background);
+  border: 5px solid var(--text-color);
+  box-shadow: -1rem 0 3rem #000;
+  display: flex;
+  flex-direction: column;
+  transition: .2s;
+  margin: 0;
+  scroll-snap-align: start;
+  clear: both;
+  position: relative;
+
+  @media (max-width: 768px) {
+    height: 300px;
+  }
+
+  &:hover {
+    transform: translateY(-1rem);
+
+    &~.card {
+      transform: translateX(130px);
+    }
+  }
+
+  &:not(:first-child) {
+    margin-left: -130px;
+  }
+}
+
+.cardHeader {
+  margin-bottom: auto;
+
+  p {
+    font-size: 14px;
+    margin: 0 0 1rem;
+    color: #7a7a8c;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: .25rem 0 auto;
+    text-decoration: none;
+    color: inherit;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+
+    &:hover {
+      background: linear-gradient(90deg, var(--color-alpha), var(--color-beta));
+      text-shadow: none;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
+}
+
+.cardAuthor {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  // margin: 1rem 0 0;
+  bottom: 0;
+
+  .authorAvatar img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    overflow: hidden;
+    margin: 16px 10px;
+  }
+
+  .authorName {
+    grid-area: auto;
+    box-sizing: border-box;
+  }
+}

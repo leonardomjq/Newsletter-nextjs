@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './InfoBox.module.scss';
+import styles from './Box.module.scss';
 
-export default function InfoBox(props) {
+export default function Box(props) {
   return (
     <div className={styles.outerBox}>
       <div className={styles.box}>

@@ -1,5 +1,5 @@
 .wrapper {
-  height: 90vh;
+  height: 80vh;
   padding: var(--master-padding);
 }
 
@@ -12,10 +12,15 @@
   height: 400px;
 
   h1 {
-    font-size: calc(1rem + 6.5vw);
+    font-size: calc(1rem + 7.5vw);
     font-weight: 900;
     width: 100%;
     text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: calc(1rem + 12vw);
+    }
+
   }
 
   p {

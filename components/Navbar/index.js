@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Nav.module.scss';
-import Nugget from '../../public/nuggets.svg';
 
 export function Navbar(props) {
   return (
