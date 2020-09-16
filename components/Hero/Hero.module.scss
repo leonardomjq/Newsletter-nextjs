@@ -1,6 +1,9 @@
 .wrapper {
   height: 80vh;
   padding: var(--master-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero {
@@ -20,7 +23,6 @@
     @media (max-width: 768px) {
       font-size: calc(1rem + 12vw);
     }
-
   }
 
   p {
@@ -33,7 +35,11 @@
     text-align: center;
 
     strong {
-      background-image: linear-gradient(to left, var(--color-gamma), var(--color-alpha));
+      background-image: linear-gradient(
+        to left,
+        var(--color-gamma),
+        var(--color-alpha)
+      );
       background-position: 0px 100%;
       background-repeat: no-repeat;
       background-size: 100% 5px;
