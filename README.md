@@ -1,4 +1,4 @@
-# DevGoldNuggets Newsletter.
+# DevGoldNuggets Newsletter 📡
 
 ### Running on Nextjs with SASS preprocessor.
 
