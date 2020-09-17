@@ -1,6 +1,6 @@
 # DevGoldNuggets Newsletter 📡
 
-### Running on Nextjs with SASS preprocessor.
+Running on Nextjs with SASS preprocessor. [Check demo here](https://newsletter-drab.vercel.app/).
 
 ### Future updates: 
 ☐ Migrate to styled-components. <br />
