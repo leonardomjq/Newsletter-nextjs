@@ -1,6 +1,6 @@
 # DevGoldNuggets Newsletter.
 
-## Running on Nextjs with SASS preprocessor.
+### Running on Nextjs with SASS preprocessor.
 
 ### Future updates: 
 ☐ Migrate to styled-components.
