@@ -36,7 +36,7 @@ export default async (req, res) => {
     // 7. Swallow any errors from Mailchimp and return a better error message.
     if (response.status >= 400) {
       return res.status(400).json({
-        error: `Oh no, the input is weird 😐. Please try again.`,
+        error: `Oh no, 😐`,
       });
     }
 

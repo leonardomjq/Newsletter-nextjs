@@ -5,7 +5,7 @@ import styles from './Body.module.scss';
 
 export default function Body() {
   return (
-    <div>
+    <main>
       <InfoBox>+1000 Reactions</InfoBox>
       <section>
         <div className={styles.grid}>
@@ -21,7 +21,7 @@ export default function Body() {
               August.
             </h2>
           </div>
-          <img src="/spaceship.png" />
+          <img src="/spaceship.png" alt="Spaceship on ignition" />
         </div>
       </section>
       <section className={styles.cardList}>
@@ -86,6 +86,6 @@ export default function Body() {
           img="./user10.jpeg"
         />
       </section>
-    </div>
+    </main>
   );
 }

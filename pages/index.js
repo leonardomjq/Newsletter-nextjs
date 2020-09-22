@@ -1,4 +1,5 @@
 import Head from 'next/head';
+
 import { Navbar, NavItem } from '../components/Navbar';
 import Twitter from '../public/twitter.svg';
 import Discord from '../public/discord.svg';
@@ -10,7 +11,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Newsletter</title>
+        <title>Dev Gold Nuggets</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Line />
       <Navbar>

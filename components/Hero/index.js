@@ -4,7 +4,7 @@ import Subscribe from '../Subscribe';
 
 export default function Hero() {
   return (
-    <div className={styles.wrapper}>
+    <header className={styles.wrapper}>
       <div className={styles.hero}>
         <h1>Hottest Newsletter</h1>
         <p>
@@ -15,6 +15,6 @@ export default function Hero() {
         </p>
       </div>
       <Subscribe />
-    </div>
+    </header>
   );
 }

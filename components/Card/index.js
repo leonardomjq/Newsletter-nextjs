@@ -10,7 +10,7 @@ export default function Card(props) {
       </header>
       <div className={styles.cardAuthor}>
         <a className={styles.authorAvatar} href="#">
-          <img src={props.img} />
+          <img src={props.img} alt="rouded for profile" />
         </a>
         <div className={styles.authorName}>{props.name}</div>
       </div>

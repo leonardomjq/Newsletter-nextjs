@@ -3,7 +3,7 @@ import styles from './Nav.module.scss';
 
 export function Navbar(props) {
   return (
-    <div>
+    <nav>
       <nav className={styles.navbar}>
         <a href="/" className={styles.logo}>
           {'<'}
@@ -12,7 +12,7 @@ export function Navbar(props) {
         </a>
         <ul className={styles.wrapNavItem}>{props.children}</ul>
       </nav>
-    </div>
+    </nav>
   );
 }
 
