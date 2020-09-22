@@ -29,7 +29,10 @@
       outline: none;
       padding: 10px 8px;
       width: 65%;
-      // text-align: left;
+
+      &::placeholder {
+        text-indent: 10px;
+      }
 
       @media(max-width: 700px) {
         width: 55%;

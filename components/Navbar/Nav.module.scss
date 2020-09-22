@@ -7,44 +7,49 @@
 }
 
 .logo {
-  color: var(--color-alpha);
-  text-decoration: none;
-  font-family: Inter;
-  font-size: calc(1rem + 1vw);
-  font-weight: 800;
+  width: 300px;
+  height: auto;
+  user-select: none;
 
-  strong {
-    color: var(--text-color);
-    animation-name: logoreverse;
-    animation-duration: 400ms;
+  @media(max-width: 700px) {
+    width: 250px;
+  }
 
-    @keyframes logoreverse {
-      from {
-        padding: 0 2px 0 3px;
-      }
+  @media(max-width: 450px) {
+    width: 200px;
+  }
 
-      to {
-        padding: 0;
-      }
+  &:hover {
+    animation: shake 1.2s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+
+  @keyframes shake {
+
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
     }
 
-    &:hover {
-      animation-name: logo;
-      animation-duration: 400ms;
-      animation-fill-mode: forwards;
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
 
-      @keyframes logo {
-        from {
-          padding: 0;
-        }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
 
-        to {
-          padding: 0 2px 0 3px;
-        }
-      }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
     }
   }
 }
+
 
 .wrapNavItem {
   max-width: 100%;
@@ -61,7 +66,7 @@
 }
 
 .icon {
-  --icon-size: calc(1rem + 1.7vw);
+  --icon-size: calc(1rem + 1vw);
   width: var(--icon-size);
   height: var(--icon-size);
   margin: 2px;
@@ -70,14 +75,22 @@
   justify-content: center;
   transition: transform 500ms;
 
+  @media(max-width: 700px) {
+    --icon-size: calc(1rem + 1.5vw);
+  }
+
+  @media(max-width: 450px) {
+    --icon-size: calc(1rem + 2vw);
+  }
+
   &:hover {
     transform: rotate(20deg);
   }
 
   svg {
     fill: var(--text-color);
-    width: 38px;
-    height: 38px;
+    width: 34px;
+    height: auto;
 
     path {
       fill: var(--color-alpha);

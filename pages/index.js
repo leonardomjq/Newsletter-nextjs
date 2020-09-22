@@ -1,8 +1,9 @@
 import Head from 'next/head';
 
-import { Navbar, NavItem } from '../components/Navbar';
 import Twitter from '../public/twitter.svg';
 import Discord from '../public/discord.svg';
+
+import { Navbar, NavItem } from '../components/Navbar';
 import Line from '../components/Line';
 import Hero from '../components/Hero';
 import Main from '../components/Body';

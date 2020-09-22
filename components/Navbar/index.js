@@ -1,15 +1,14 @@
 import React from 'react';
 import styles from './Nav.module.scss';
+import Logo from '../../public/logo.svg';
 
 export function Navbar(props) {
   return (
     <nav>
       <nav className={styles.navbar}>
-        <a href="/" className={styles.logo}>
-          {'<'}
-          <strong>DevGoldNuggets</strong>
-          {' />'}
-        </a>
+        <ul href="/" className={styles.logo}>
+          <Logo alt="Meat by Monjin Friends from the Noun Project" />
+        </ul>
         <ul className={styles.wrapNavItem}>{props.children}</ul>
       </nav>
     </nav>

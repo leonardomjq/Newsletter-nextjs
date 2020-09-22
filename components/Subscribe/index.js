@@ -42,13 +42,13 @@ export default function Subscribe() {
           <input
             id="email-input"
             name="email"
-            placeholder="tim@apple.com"
+            placeholder="elon@spacex.com"
             ref={inputEl}
             type="email"
           />
           <button type="submit">Subscribe</button>
         </form>
-        <p>{message ? message : `Rated 10/10 by our moms. No Spam.`}</p>
+        <p>{message ? message : `Once a week. Free forever. 💎 `}</p>
       </div>
     </div>
   );
