@@ -10,10 +10,11 @@ import Main from '../components/Body';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Dev Gold Nuggets</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charSet="utf-8" />
       </Head>
       <Line />
       <Navbar>
@@ -22,6 +23,6 @@ export default function Home() {
       </Navbar>
       <Hero />
       <Main />
-    </div>
+    </>
   );
 }
