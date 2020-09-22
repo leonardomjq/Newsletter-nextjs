@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../Hero/Hero.module.scss';
+import Subscribe from '../Subscribe';
 
 export default function Hero() {
   return (
@@ -13,11 +14,7 @@ export default function Hero() {
           <br />
         </p>
       </div>
-      <div className={styles.wrapSignUp}>
-        <input type="text" placeholder="Your email address" />
-        <button>Subscribe</button>
-      </div>
-      {/* <Blob1 className={styles.blob} /> */}
+      <Subscribe />
     </div>
   );
 }
