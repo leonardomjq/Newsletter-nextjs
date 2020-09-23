@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import Twitter from '../public/twitter.svg';
-import Discord from '../public/discord.svg';
+// import Discord from '../public/discord.svg';
 
 import { Navbar, NavItem } from '../components/Navbar';
 import Line from '../components/Line';
@@ -19,7 +19,7 @@ export default function Home() {
       <Line />
       <Navbar>
         <NavItem icon={<Twitter />} />
-        <NavItem icon={<Discord />} />
+        {/* <NavItem icon={<Discord />} /> */}
       </Navbar>
       <Hero />
       <Main />

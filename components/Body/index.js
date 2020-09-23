@@ -23,7 +23,7 @@ export default function Body() {
           <img src="/spaceship.png" alt="Spaceship on ignition" />
         </div>
       </section>
-      <InfoBox>+1000 Reactions</InfoBox>
+      <InfoBox>+1000 Reactions 🥳</InfoBox>
       <section className={styles.cardList}>
         <Card
           date="Aug 6"
