@@ -42,7 +42,7 @@ export default function Subscribe() {
           <input
             id="email-input"
             name="email"
-            placeholder="elon@spacex.com"
+            placeholder="tim@apple.com"
             ref={inputEl}
             type="email"
           />

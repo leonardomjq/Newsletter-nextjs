@@ -20,10 +20,10 @@ export default function Body() {
               August.
             </h2>
           </div>
-          <img src="/spaceship.png" alt="Spaceship on ignition" />
+          <img src="/paper.png" alt="Spaceship on ignition" />
         </div>
       </section>
-      <InfoBox>+1000 Reactions 🥳</InfoBox>
+      <InfoBox>+1000 Reactions 🍬</InfoBox>
       <section className={styles.cardList}>
         <Card
           date="Aug 6"

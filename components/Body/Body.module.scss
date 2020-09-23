@@ -1,17 +1,19 @@
 .grid {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
   padding: var(--master-margin);
   align-items: center;
+  justify-items: center;
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
+    height: 70vh;
   }
 
   .text {
     text-align: center;
-
 
     h2 {
       font-size: calc(1rem + 5vw);
@@ -61,12 +63,17 @@
   }
 
   img {
-    max-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    object-position: 50% 50%;
+    align-self: center;
+    justify-items: center;
+    width: 600px;
+
+    @media(max-width: 768px) {
+      width: 400px;
+    }
+
+    @media(max-width: 450px) {
+      width: 300px;
+    }
 
     &:hover {
       animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;

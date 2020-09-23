@@ -7,7 +7,7 @@ export function Navbar(props) {
     <nav>
       <nav className={styles.navbar}>
         <ul href="/" className={styles.logo}>
-          <Logo alt="Meat by Monjin Friends from the Noun Project" />
+          <Logo alt="Bubblegum.dev logo image" />
         </ul>
         <ul className={styles.wrapNavItem}>{props.children}</ul>
       </nav>
@@ -18,7 +18,11 @@ export function Navbar(props) {
 export function NavItem(props) {
   return (
     <li className={styles.navItem}>
-      <a href="#" className={styles.icon}>
+      <a
+        href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fplatform.twitter.com%2F&ref_src=twsrc%5Etfw&screen_name=leokindacodes&tw_p=followbutton"
+        target="_blank"
+        className={styles.icon}
+      >
         {props.icon}
       </a>
     </li>
