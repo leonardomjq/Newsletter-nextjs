@@ -1,4 +1,4 @@
-# DevGoldNuggets Newsletter 💎
+# Bubblegum.dev 🍬
 
 Running on Nextjs with SASS preprocessor. [Check demo here](https://newsletter-drab.vercel.app/).
 
