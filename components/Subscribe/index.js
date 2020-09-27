@@ -48,7 +48,9 @@ export default function Subscribe() {
           />
           <button type="submit">Subscribe</button>
         </form>
-        <p>{message ? message : `Free forever. Once a week.`}</p>
+        <p>
+          {message ? message : `Free candy on the back of the van. Hop in.`}
+        </p>
       </div>
     </div>
   );
