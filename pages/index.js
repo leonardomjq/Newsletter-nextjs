@@ -26,14 +26,14 @@ export default function Home() {
         <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
         <meta
           name="twitter:image"
-          content="https://raw.githubusercontent.com/leonardomjq/Newsletter-nextjs/master/public/bubblegum2.png"
+          content="https://raw.githubusercontent.com/leonardomjq/Newsletter-nextjs/master/public/slogan.png"
           key="twitterimage"
         />
         {/* Open Graph */}
         <meta property="og:url" content={currentURL} key="ogurl" />
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/leonardomjq/Newsletter-nextjs/master/public/bubblegum2.png"
+          content="https://raw.githubusercontent.com/leonardomjq/Newsletter-nextjs/master/public/slogan.png"
           key="ogimage"
         />
         <meta property="og:site_name" content={siteName} key="ogsitename" />
