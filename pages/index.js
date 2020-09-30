@@ -14,7 +14,7 @@ export default function Home() {
   const siteName = 'Bubblegum.dev';
   const pageTitle = 'Bubblegum Newsletter';
   const description =
-    'Bubblegum is a newsletter that curates the top trending web developer resources, weekly.';
+    'Stickiest newsletter out there. Subscribe to receive trending hot developer resources, weekly.';
   return (
     <>
       <Head>
@@ -26,14 +26,18 @@ export default function Home() {
         <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
         <meta
           name="twitter:image"
-          content="https://raw.githubusercontent.com/leonardomjq/Newsletter-nextjs/master/public/slogan.png"
+          content="https://raw.githubusercontent.com/leonardomjq/Newsletter-nextjs/master/public/bubblegum2.png"
           key="twitterimage"
+        />
+        <meta
+          name="twitter:image:alt"
+          content="Bubblegum Newsletter thumbnail cover"
         />
         {/* Open Graph */}
         <meta property="og:url" content={currentURL} key="ogurl" />
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/leonardomjq/Newsletter-nextjs/master/public/slogan.png"
+          content="https://raw.githubusercontent.com/leonardomjq/Newsletter-nextjs/master/public/bubblegum2.png"
           key="ogimage"
         />
         <meta property="og:site_name" content={siteName} key="ogsitename" />
