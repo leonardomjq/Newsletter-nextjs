@@ -12,7 +12,7 @@ export default function Home() {
   const twitterHandle = '@leokindacodes';
   const currentURL = 'https://bubblegum.dev';
   const siteName = 'Bubblegum.dev';
-  const pageTitle = 'Bubblegum.dev';
+  const pageTitle = 'Bubblegum Newsletter';
   const description =
     'Bubblegum is a newsletter that curates the top trending web developer resources, weekly.';
   return (
