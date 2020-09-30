@@ -34,6 +34,8 @@ export default function Home() {
         <meta property="og:site_name" content={siteName} key="ogsitename" />
         <meta property="og:title" content={pageTitle} key="ogtitle" />
         <meta property="og:description" content={description} key="ogdesc" />
+        {/* Include this to make the og:image larger */}
+        <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
       <Line />
       <Navbar>
