@@ -11,15 +11,16 @@ import Main from '../components/Body';
 export default function Home() {
   const twitterHandle = '@leokindacodes';
   const currentURL = 'https://bubblegum.dev';
-  const previewImage = '../public/bubblegum2.png';
+  const previewImage =
+    'https://raw.githubusercontent.com/leonardomjq/Newsletter-nextjs/master/public/bubblegum2.png';
   const siteName = 'Bubblegum.dev';
-  const pageTitle = 'Bubblegum Newsletter';
+  const pageTitle = 'Bubblegum.dev';
   const description =
     'Bubblegum is a newsletter that curates the top trending web developer resources, weekly.';
   return (
     <>
       <Head>
-        <title>Bubblegum.dev</title>
+        <title>{pageTitle}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta charSet="utf-8" />
         {/* Twitter */}
