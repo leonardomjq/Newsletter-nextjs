@@ -24,6 +24,14 @@ export default function Home() {
         {/* Twitter */}
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
+        {/* Discord */}
+        <meta name="discord:card" content="summary" key="twcard" />
+        <meta name="discord:creator" content={twitterHandle} key="twhandle" />
+        <meta
+          property="discord:image"
+          content="https://raw.githubusercontent.com/leonardomjq/Newsletter-nextjs/master/public/bubblegum2.png"
+          key="discordimage"
+        />
         {/* Open Graph */}
         <meta property="og:url" content={currentURL} key="ogurl" />
         <meta
