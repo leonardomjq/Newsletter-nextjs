@@ -14,6 +14,17 @@ export default function Hero() {
         </p>
       </div>
       <Subscribe />
+      <div className={styles.producthunt}>
+        <a
+          href="https://www.producthunt.com/posts/bubblegum-dev?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bubblegum-dev"
+          target="_blank"
+        >
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269088&theme=dark"
+            alt="Bubblegum.dev - Sweetest dev resources delivered to your inbox, weekly 🍬🍬 | Product Hunt"
+          />
+        </a>
+      </div>
     </header>
   );
 }
