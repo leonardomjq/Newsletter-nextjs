@@ -45,6 +45,21 @@ export default function Home() {
         <meta property="og:description" content={description} key="ogdesc" />
         {/* Include this to make the og:image larger */}
         <meta name="twitter:card" content="summary_large_image"></meta>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-120728974-4"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-120728974-4');
+        `,
+          }}
+        />
       </Head>
       <Line />
       <Navbar>
