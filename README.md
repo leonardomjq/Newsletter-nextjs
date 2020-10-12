@@ -1,8 +1,9 @@
-# Bubblegum.dev 🍬
+# Bubblegum.dev [v1] 🍬
 
 Running on Nextjs with SASS preprocessor. [Check demo here](https://newsletter-drab.vercel.app/).
 
-### Future updates: 
-☐ Also fetch comments done on Twitter from API.
+### [v2] Updates: 
+☐ Create a Blog page to publish past weekly resources.
+☐ Fetch comments about the newsletter Twitter.
 
 ![Newsletter Demo](public/Newsletter.gif)
