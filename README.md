@@ -2,7 +2,7 @@
 
 #### Bubblegum is a Newsletter that was born out of a Dev.to post. It's meant to be casual and fun. Subscribe [here](https://bubblegum.dev/).
 
-It's build with Nextjs and SASS.
+Built with Nextjs and SASS.
 
 ### [v2] Updates: 
 ☐ Create a Blog page to publish past weekly resources. <br/>
