@@ -4,7 +4,7 @@
 
 Built with React(Nextjs) and SASS.
 
-### [IDLE]
-This project is currently offline..
+### [status]
+This project is currently offline. Maybe in the future I will come back to this.
 
 ![Newsletter Demo](public/Newsletter.gif)
